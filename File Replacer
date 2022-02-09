@@ -27,4 +27,4 @@ def process_packet -scapy.IP(packet.get_payload())
        
 queue = netfilterqueue.NetfilterQueue()
 queue.bind(0, process_packet)
-queue.run()       
+queue.run(0)       
